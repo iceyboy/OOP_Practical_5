@@ -5,22 +5,25 @@ import java.util.Scanner;
 public class Menu {
 	
 	private String items[];
+	
 	private String title;
+	
 	private Scanner input;
 
 	public Menu(String title, String data[]) {
 		
 		this.title = title;
+		
 		this.items = data;
+		
 		this.input = new Scanner(System.in);
 		
 	}
 
 	public int getUserChoice() {
-		
-		
-		
+			
 		display();
+		
 		int value = 0;
 		
 		do {
